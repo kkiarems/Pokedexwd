@@ -1,0 +1,39 @@
+.var-button {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin-block-end: .5rem;
+}
+
+.vbutton {
+    inline-size: 1.875rem;
+    block-size: .5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--yellow);
+    filter: drop-shadow(.1rem .1rem 0 #D2AB33);
+    cursor: pointer;
+}
+
+.vbutton.is-big {
+    margin-inline-start: .2rem;
+    overflow: auto;
+    inline-size: 3.5rem;
+    block-size: 3.5rem;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    border: none;
+    filter: drop-shadow(.2rem .2rem 0 var(--black));
+    cursor: pointer;
+    margin-inline-end: .5rem;
+}
+
+.vbutton.is-secondary {
+    background-color: var(--secondary);
+    filter: drop-shadow(.1rem .1rem 0 #300F16);
+    cursor: pointer;
+}
+
+.vbutton:active {
+    transform: scale(.9);
+}
